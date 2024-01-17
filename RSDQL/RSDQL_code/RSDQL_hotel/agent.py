@@ -19,13 +19,13 @@ import paddle.fluid as fluid
 import parl
 import random
 import paddle.fluid.layers as layers
-from dataSet.data import Data
+from MyRL.REINFORCE_RSDQL.Dataset.data import Data
 data = Data()
 
 ContainerNumber = data.ContainerNumber
 NodeNumber = data.NodeNumber
 
-print(ContainerNumber)
+
 flag=[]
 flag_temp=[]
 for o in range( ContainerNumber * NodeNumber):

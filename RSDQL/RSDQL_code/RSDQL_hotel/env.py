@@ -2,13 +2,10 @@ alpha = 0.5  # reward weighting factor
 beta = [0.5, 0.5]  # 资源亲和度
 count = 0  # 容器已部署的个数
 
-from dataSet.data import Data
+from MyRL.REINFORCE_RSDQL.Dataset.data import Data
 
-import collections
-import random
 import numpy as np
-import agent
-import copy
+
 data = Data()
 NodeNumber = data.NodeNumber
 ContainerNumber = data.ContainerNumber

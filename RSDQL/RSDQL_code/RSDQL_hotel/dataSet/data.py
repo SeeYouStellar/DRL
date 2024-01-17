@@ -14,7 +14,7 @@ class Data():
     def __init__(self):
         self.service_containernum = []  # 每个服务的需启动的容器数 [1, 1, 1, 1, 1, 1, 1, 1] 这里每个服务都需要启动一个容器
         self.service_container = []  # 每个服务所启动的容器列表 [[0], [1], [2], [3], [4], [5], [6], [7]]
-        self.service_container_relationship = []  # 微服务和容器的映射（假设这个是事先预定的，即哪个微服务在在哪个容器启用）
+        self.service_container_relationship = []  # 容器->微服务的映射（假设这个是事先预定的，即哪个微服务在在哪个容器启用）
         self.container_state_queue = []  # 容器状态队列
         self.NodeNumber = int(root.getElementsByTagName('nodeNumber')[0].firstChild.data)  # 5
         self.ContainerNumber = int(root.getElementsByTagName('containerNumber')[0].firstChild.data)  # 8
